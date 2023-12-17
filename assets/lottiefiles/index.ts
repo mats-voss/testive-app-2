@@ -1,0 +1,6 @@
+export const StudentLottie = require('./student.json')
+export const TeacherWithStudentLottie = require('./teacherWithStudent.json')
+export const TimerWithBooksLottie = require('./timerWithBooks.json')
+export const VerifyEmailLottie = require('./verifyEmail.json')
+export const SuccessStudentsLottie = require('./sucessStudents.json')
+export const LostConnectionLottie = require('./lostConnecton.json')

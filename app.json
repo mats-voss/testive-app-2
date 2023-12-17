@@ -11,20 +11,39 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "react-native-auth0",
+        {
+          "domain": "testive.eu.auth0.com",
+          "customScheme": "de.testive.app"
+        }
+      ]
+    ],
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "de.testive.app",
+      "entitlements": {
+        "com.apple.developer.device-information.user-assigned-device-name": true
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "de.testive.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "10087593-71e0-4f03-8093-a5be1ca8bf4e"
+      }
     }
   }
 }
